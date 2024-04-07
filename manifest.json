@@ -1,0 +1,16 @@
+{
+    "name": "Simple YouTube Downloader",
+    "description": "Download YouTube videos simpler than before",
+    "version": "0.1",
+    "author": "Sekhar Thapa",
+    "manifest_version": 3,
+    "web_accessible_resources": [
+        "youtube.js"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/watch*"],
+            "js": ["loader.js"]
+        }
+    ]
+}
